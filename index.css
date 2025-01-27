@@ -1,0 +1,2083 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu+Condensed&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+*{
+
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline :none;
+    scroll-behavior: smooth;
+    font-family:"Poppins",sans-serif;
+}
+:root{
+    --bg-color:#080808;
+    --second-bg-color:#131313;
+    --text-color:white;
+    --main-color:#FFD700;
+
+}
+
+body{
+    font-size: 60%;
+    overflow-x: hidden;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+.header{
+    position: fixed;
+    display: flex;
+    column-gap: 58%;
+    top: 0;
+    left: 0;
+    height: 70px;
+    width:100%;
+    padding-top: 1rem;
+    padding-right: 11%;
+    padding-bottom: 4rem;
+    background-color: rgba(0,0,0,0.3);
+    backdrop-filter: blur(10px);
+    z-index: 99;
+}
+.logo{
+    display: flex;
+    flex-wrap: nowrap;
+    column-gap: 5px;
+    padding-left: 100px;
+    font-size: 1.7rem;
+    color: var(--text-color);
+    font-weight: 800;
+    cursor: pointer;
+    transition:  0.3s  ease;
+}
+.logo span{
+    text-shadow:0 0 20px var(--main-color);
+}
+.logo:hover{
+    transform: scale(1.1);
+}
+.navbar{
+    display: flex;
+    column-gap: 40px;
+    margin-right: 800px;
+
+}
+.navbar a {
+    padding-top: 8px;
+    font-size:0.8rem ;
+    color: var(--text-color);
+    border-bottom: 3px solid transparent;
+    font-weight:600 ;
+    transition: 0.4s ease-in-out;
+    margin-bottom: -30px;
+}
+.navbar a i{
+    margin-top:-5px;
+    font-size: 30px;
+}
+
+.navbar a:hover{
+    border-bottom: 3px solid var(--main-color);
+}
+.navbar .active{
+    color: var(--main-color);
+    margin-bottom: -30px;
+    border-bottom: 3px solid var(--main-color);
+}
+.sidebar{
+    display: none;
+    border-radius: 0px 0px 0px 30px;
+    height: 40vh;
+    width: 15%;
+    position: fixed;
+    right: 0px;
+    top: 58px;
+    margin-top: 20px;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #ffd9002b;
+    z-index: 98;
+    box-shadow:  0 0 25px var(--main-color);
+}
+.sidebar a {
+    padding-left: 20px;
+    font-size:0.8rem ;
+    color: var(--text-color);
+    border-bottom: 3px solid transparent;
+    font-weight:600 ;
+    transition: 0.4s ease-in-out;
+    margin-bottom: 20px;
+}
+.sidebar a:hover{
+    border-bottom: 3px solid var(--main-color);
+}
+.sidebar i{
+    font-size: 30px;
+}
+.home {
+    display: flex;
+    margin-top: 6%;
+    padding-left: 5rem;
+    min-height: 100vh;
+}
+.home  h1{
+    font-size: 3rem;
+}
+
+.home  h1 span{
+    color: var(--main-color);
+    
+}
+.home  h2{
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 1.7;
+}
+.home  p{
+    width: 45rem;
+    font-size: 15px;
+    line-height: 1.7;
+}
+.moro img{
+    width: 26rem;
+    height: 26rem;
+    position: relative;
+    top:40px;
+    left: 20rem;
+    border-radius: 50%;
+    box-shadow: 0 0 25px var(--main-color);
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+    animation: animation1 1.5s ease-in-out;
+}
+@keyframes animation1 {
+    0%{
+        transform: translateX(500px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+.moro img:hover{
+    box-shadow:  0 0 25px var(--main-color),
+                 0 0 50px var(--main-color),
+                 0 0 75px var(--main-color);
+}
+
+.resaux a {
+    margin-top: 15px;
+    font-size: 1.6rem;
+    height: 2.4rem;
+    width:2.4rem;
+    padding-left: 5px;
+    padding-bottom: 10px;
+    color: var(--main-color);
+    border: 2px solid;
+    border-radius: 50%;
+    border-color:  var(--main-color);
+    transition: 0.3s ease-in-out;
+}
+.resaux a:hover{
+    color: var(--text-color);
+    transform: scale(1.3) translateY(-5px);
+    box-shadow: 0 0 25px var(--main-color);
+    background-color: var(--main-color);
+}
+.resaux {
+   display: flex;
+   column-gap: 15px;
+}
+.homebtn{
+    margin-top: 20px;
+    display: flex;
+    column-gap: 10px;
+}
+
+.hire{
+    color: black;
+    background-color: var(--main-color);
+    box-shadow: 0 0 15px var(--main-color);
+}
+.contact{
+    color: var(--main-color);
+}
+.homebtn a{
+    
+    font-size: 20px;
+    padding:0 15px;
+    border: 2px solid var(--main-color);
+    border-radius: 30px;
+    transition: 0.3s ease-in-out;
+}
+.homebtn a:hover{
+    background-color: var(--main-color);
+    color:black;
+    transform: scale(1.05);
+    box-shadow: 0 0 50px var(--main-color);
+}
+.text-animation span {
+    position: relative; /* Pour positionner les pseudo-éléments */
+    padding-bottom: 5px;
+    padding-left: 2px;
+}
+  
+.text-animation span::before {
+    content: "Web Developer";
+    color: var(--main-color);
+    animation: words 20s infinite;
+}
+  
+.text-animation span::after {
+    content: "";
+    background-color: var(--bg-color);
+    position: absolute;
+    width: calc(100% + 12px);
+    height: 100%;
+    border-left: 3px solid var(--bg-color);
+    right: 0.2px;
+    animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
+}
+@keyframes cursor {
+    to {
+      border-left: none;
+    }
+}
+  
+@keyframes words {
+    0%, 
+    20% {
+      content: "Frontend developer";
+    }
+    21%, 40% {
+      content: "computer science student";
+    }
+    41%, 60% {
+      content: "trumpeter & percussionist";
+    }
+    61%, 
+    80% {
+      content: "GDSC ISIMA EVENT'S MANAGER";
+    }
+    81%,
+    100%{
+        content:"photographer"
+    }
+
+  }
+@keyframes typing {
+    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95% {
+      width: 0;
+    }
+    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85%{
+      width: calc(100%);
+    }
+  }
+.education {
+    margin-top: -20px;
+    height: 800px;
+    margin-bottom: 20rem; /* Spacing between sections */
+}
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4.3rem;
+    margin-top: -0px;
+}
+.timelineitems{
+    margin-top: 80px;
+    margin-left: 330px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+section .timelineitems::before{
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 50rem;
+    margin-top:7px;
+    background-color: var(--main-color);
+    right: 50%;
+    border-bottom: 1px solid#FFD700;
+    border-radius: 80px;
+}
+.timeline-dot{
+    margin-top: 30px;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    box-shadow: 0 0 25px var(--main-color),
+                0 0 50px var(--main-color);
+}
+.timeline-dot:nth-child(odd){
+    position: absolute;
+    left: 753px;
+}
+.timeline-item{
+    margin: bottom 50px;
+}
+.timeline-item:nth-child(odd){
+    margin-right: 50%;
+    text-align: right;
+    animation: animation2 1s ease-in-out;
+}
+.timeline-item:nth-child(even){
+    margin-right: 5%;
+    animation: animation3 1s ease-in-out;
+
+}
+.timeline-item:last-child{
+    margin-bottom: 0px;
+}
+.lineitemcontent{
+    padding: 20px;
+    text-align: center;
+    border: 1px solid var(--main-color);
+    border-radius:40px;
+    width: 200px;
+    font-size: 13px;
+    cursor: pointer;
+    box-shadow: 0 0 8px var(--main-color);
+    transition: 0.3s ease-in-out;
+}
+.lineitemcontent h3{
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+    font-weight: 800;
+}
+.lineitemcontent:hover{
+    box-shadow: 0 0 25px var(--main-color);
+    transform: scale(1.02) translateY(-5px);
+}
+.timelinedate{
+    margin-top:30px;
+    font-size: 14px;
+}
+::-webkit-scrollbar{
+    width:5px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--main-color);
+}
+::-webkit-scrollbar-track{
+    background-color:var(--bg-color);
+    width: 5px;
+}
+#skills{
+    text-align: center;
+    
+}
+.skill{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 50px;
+    row-gap: 100px;
+    font-size: 150px;
+
+}
+.skill div{
+    margin-top: 50px;
+    width: 200px;
+    height: 200px;
+    color: var(--main-color);
+    border: 2px solid;
+    border-radius: 70%;
+    border-color:  var(--main-color);
+    transition: 0.3s ease-in-out;
+}
+.skill div p{
+    font-size: 15px;
+}
+.skill div:hover{
+    color: var(--text-color);
+    transform: scale(1.3) translateY(-5px);
+    box-shadow: 0 0 25px var(--main-color);
+    background-color: var(--main-color);
+}
+.skill img{
+    width: 100px;
+    height: 100px;
+    border-radius: 10%;
+    margin-bottom: 15px;
+}
+#skills h1{
+    font-size: 4.3rem;
+    margin-top: 0px;
+    margin-bottom: 100px;
+}
+#skills span{
+    color: var(--main-color);
+}
+.skillnoun {
+    margin-top: 50px;
+    display: flex;
+    justify-content:center;
+    column-gap:150px ;
+    font-size: 30px;
+}
+.skillnoun1{
+    margin-top: 0%;
+    display: flex;
+    justify-content:center;
+    column-gap:150px ;
+    font-size: 30px;
+    margin-bottom: 200px;
+}
+#html-text{
+    opacity: 0%;
+    margin-left:10rem;
+    margin-top: -20%;
+
+}
+#css-text{
+    margin-left: 5rem;
+
+    margin-top: -20%;
+    opacity: 0%;
+}
+#java-text{
+    margin-top: -20%;
+    opacity: 0%;
+}
+#js-text{
+    margin-top: -20%;
+    opacity: 0%;
+
+}
+#python-text{
+    margin-top: -20%;
+    opacity: 0%;
+    margin-right: 0px;
+
+}
+#cplus-text{
+    opacity: 0%;
+    margin-right: 10rem;
+    margin-top: -20%;
+}
+#vs-text{
+    opacity: 0%;
+    margin-right: 1rem;
+}
+#npm-text{
+    opacity: 0%;
+    margin-left: 2.5rem;
+}
+#git-text{
+    opacity: 0%;
+    margin-left: 2rem;
+}
+#github-text{
+    opacity: 0%;
+    margin-left: 5rem;
+}
+
+#after-text{
+    opacity: 0%;
+
+    font-size: 30px;
+}
+#premier-text{
+    opacity: 0%;
+    margin-right: -3rem;
+
+}
+#contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#contact h1{
+    font-size:  4.3rem;
+}
+#contact h1 span{
+    color: var(--main-color);
+}
+.contact{
+    display: flex;
+    column-gap: 20PX;
+}
+.informations{
+    margin-top:40px;
+    display: flex;
+    row-gap: 10px;
+    flex-direction: column;
+    margin-bottom: 200px;
+}
+.informations input{
+    margin-top:10px;
+    border: 2px solid var(--main-color);
+    border-radius: 10px;
+    background-color:var(--bg-color);
+    width: 400px;
+    height: 50px;
+    padding-left: 40px;
+}
+.message{
+    margin-top: 40px;
+
+}
+.message textarea{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 400px;
+    height: 120px;
+    border: 2px solid var(--main-color);
+    border-radius: 10px;
+    background-color:var(--bg-color);
+    padding-top:10px;
+    padding-left: 40px;
+
+    
+}
+.contact div button{
+    margin-top: 20px;
+    border: 2px solid var(--main-color);
+    border-radius: 30px;
+    background-color:var(--main-color);
+    color: rgb(0, 0, 0);
+    width: 200px;
+    height: 40px;
+    margin-left: 100px;
+    box-shadow: 0 0 15px var(--main-color);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+input,textarea{ 
+    color: rgb(255, 255, 255); 
+}
+.contact div button:hover{
+    box-shadow: 0 0 50px var(--main-color);
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+footer .navbar2{
+    margin-top: 15px;
+    display: flex;
+    column-gap: 20px;
+}
+footer .navbar2 a{
+    text-decoration:none ;
+    color: aliceblue;
+    font-weight: 300;
+}
+footer p{
+    font-weight: 100;
+}
+.audio{
+    margin-bottom:20px;
+    width: 301px;
+    height: 56px;
+    border-radius: 30px;
+    border: 1px solid ;
+    border-color: transparent;
+}
+.audio:hover{
+    
+    box-shadow: 0 0 25px var(--main-color);
+    background-color: var(--main-color);
+}
+audio{
+    padding-left: 0px;
+    cursor: pointer;
+}
+audio::-webkit-media-controls-panel{
+    background-color: var(--main-color);
+}
+@media (max-width:2992px) {
+    .navbar a i {
+        display: none;
+    }
+    section .timelineitems::before{
+        content: "";
+        position: absolute;
+        width: 5px;
+        height: 50rem;
+        margin-top:7px;
+        background-color: var(--main-color);
+        right: 50%;
+
+    }
+    section .timelineitems::before{
+        right: 50%;
+        height: 50rem;
+
+    }
+    .timeline-item:nth-child(odd){
+        margin-right: 25%;
+        text-align: right;
+    }
+    .timeline-item:nth-child(even){
+        margin-right: 0%;
+    }
+    .timeline-dot:nth-child(odd){
+        position: absolute;
+        left: 49.6%;
+    }
+    .education{
+        margin-top: 10%;
+        margin-bottom: 20%;
+    }
+    .heading{
+        font-size: 8rem;
+    }
+    #skills h1{
+        font-size: 8rem;
+
+    }
+    #contact h1{
+        font-size: 8rem;
+
+    }
+    .header{
+        column-gap: 80%;
+    }
+    .home p{
+        font-size: 1.5rem;
+        width: 60%;
+    }
+    .home h1{
+        font-size: 6rem;
+    }
+    .home h2{
+        font-size: 2rem;
+    }
+    .moro img{
+        margin-left: -100%;
+        width: 40rem;
+        height: 40rem;
+    }
+
+}
+@media (max-width:2500px){
+    section .timelineitems::before{
+        right: 50%;
+        height: 50rem;
+
+    }
+    .timeline-item:nth-child(odd){
+        margin-right: 40%;
+        text-align: right;
+    }
+    .timeline-item:nth-child(even){
+        margin-right: 0%;
+    }
+    .timeline-dot:nth-child(odd){
+        position: absolute;
+        left: 49.5%;
+    }
+}
+@media (max-width:1800px) {
+    .navbar a i {
+        display: none;
+    }
+    section .timelineitems::before{
+        content: "";
+        position: absolute;
+        width: 5px;
+        height: 50rem;
+        margin-top:7px;
+        background-color: var(--main-color);
+        right: 50%;
+
+    }
+    section .timelineitems::before{
+        right: 50%;
+        height: 50rem;
+
+    }
+    .timeline-item:nth-child(odd){
+        margin-right: 43%;
+        text-align: right;
+    }
+    .timeline-item:nth-child(even){
+        margin-right: 6%;
+    }
+    .timeline-dot:nth-child(odd){
+        position: absolute;
+        left: 49.3%;
+    }
+    .education{
+        margin-top: 10%;
+        margin-bottom: 20%;
+    }
+    .heading{
+        font-size: 6rem;
+    }
+    #skills h1{
+        font-size: 6rem;
+
+    }
+    #contact h1{
+        font-size: 5rem;
+
+    }
+    .header{
+        column-gap: 60%;
+    }
+    .home p{
+        font-size: 1.2rem;
+        width: 80%;
+    }
+    .home h1{
+        font-size: 4rem;
+    }
+    .home h2{
+        font-size: 2rem;
+    }
+    .moro img{
+        margin-left: -80%;
+        width: 30rem;
+        height: 30rem;
+    }
+
+}
+@media (max-width:1700px){
+    section .timelineitems::before{
+        right: 50%;
+        height: 50rem;
+
+    }
+    .timeline-item:nth-child(odd){
+        margin-right: 50%;
+        text-align: right;
+    }
+    .timeline-item:nth-child(even){
+        margin-right: 0%;
+    }
+    .timeline-dot:nth-child(odd){
+        position: absolute;
+        left: 49.3%;
+    }
+}
+@media (max-width:1560px){
+    .home p{
+        width: 70%;
+        font-size: 15px;
+    }
+    .home h1{
+        margin-bottom: -4%;
+    }
+    .home h2{
+        margin-bottom: -1%;
+    }
+    .moro img{
+        width:24rem;
+        height: 24rem;
+        left: 50%;
+    }
+    .education{
+        margin-top: 0%;
+        margin-bottom: 40%;
+    }
+}
+@media (max-width:1440px){
+    .navbar a i {
+        display: none;
+    }
+    section .timelineitems::before{
+        right: 50%;
+        height: 50rem;
+
+    }
+    .timeline-item:nth-child(odd){
+        margin-right: 52%;
+        text-align: right;
+    }
+    .timeline-item:nth-child(even){
+        margin-right: 5%;
+    }
+    .timeline-dot:nth-child(odd){
+        position: absolute;
+        left: 49.2%;
+    }
+    .education{
+        margin-top: 10%;
+        margin-bottom: 20%;
+    }
+    .heading{
+        font-size: 5rem;
+    }
+    #skills h1{
+        font-size: 5rem;
+
+    }
+    #contact h1{
+        font-size: 5rem;
+
+    }
+    .header{
+        column-gap: 50%;
+    }
+    .home p{
+        font-size: 0.7rem;
+        width: 60%;
+    }
+    .home h1{
+        font-size: 3rem;
+        margin-bottom:-1%;
+    }
+    .home h2{
+        font-size: 1rem;
+    }
+    .moro img{
+        margin-left: -110%;
+        width: 22rem;
+        height: 22rem;
+    }
+
+}
+
+@media (max-width:1379px){
+    .header{
+        column-gap:50%;
+    }
+    .navbar a i {
+        display: none;
+    }
+    .moro img{
+        margin-left: -100%;
+    }
+    section .timelineitems::before{
+        right: 50%;
+        height: 50rem;
+
+    }
+    .timeline-item:nth-child(odd){
+        margin-right: 70%;
+        text-align: right;
+    }
+    .timeline-item:nth-child(even){
+        margin-left: 10%;
+    }
+    .timeline-dot:nth-child(odd){
+        position: absolute;
+        left: 49.1%;
+    }
+}
+@media (max-width:1200px){
+    .skillnoun h4{
+        color: #080808;
+    }
+    .skillnoun1 h4{
+        color: #080808;
+    }
+    .header{
+        column-gap:45%;
+    }
+    .navbar a i {
+        display: none;
+    }
+    .moro img{
+        margin-left: -105%;
+    }
+    .heading{
+        font-size: 5rem;
+    }
+    #skills h1{
+        font-size: 5rem;
+
+    }
+    #contact h1{
+        font-size: 5rem;
+
+    }
+    section .timelineitems::before{
+        right: 50%;
+        height: 50rem;
+
+    }
+    .timeline-item:nth-child(odd){
+        margin-right: 90%;
+        text-align: right;
+    }
+    .timeline-item:nth-child(even){
+        margin-right: 0%;
+    }
+    .timeline-dot:nth-child(odd){
+        position: absolute;
+        left: 49.3%;
+    }
+}
+@media (max-width:1100px){
+    .header{
+        column-gap:35%;
+    }
+    .navbar a i {
+        display: none;
+    }
+    .moro img{
+        margin-left: -95%;
+        width: 21rem;
+        height:21rem;
+    }
+}
+
+@media (max-width:1024px){
+    .header{
+        column-gap: 37%;
+    }
+    .navbar a i {
+        display: none;
+    }
+    section .timelineitems::before{
+        right: 45%;
+        height: 50rem;
+
+    }
+    .timeline-item:nth-child(odd){
+        margin-right: 70%;
+        text-align: right;
+    }
+    .timeline-item:nth-child(even){
+        margin-LEFT: 5%;
+    }
+    .timeline-dot:nth-child(odd){
+        position: absolute;
+        left: 53.8%;
+    }
+    .education{
+        margin-top: 10%;
+    }
+    .heading{
+        margin-bottom: 20%;
+        margin-left: 10%;
+    }
+    .moro img {
+        width: 20rem;
+        height: 20rem;
+        margin-left: -100%;
+    }
+    .education{
+        margin-bottom: 80%;
+    }
+    .home p{
+        width: 60%;
+    }
+}
+@media (max-width:980px){
+    .header{
+        column-gap:25%;
+    }
+    .navbar a i {
+        display: none;
+    }
+    .moro img{
+        width: 17rem;
+        height: 17rem;
+        margin-left: -80%;
+    }
+    .skill{
+        flex-wrap: wrap;
+    
+    }
+    section .timelineitems::before{
+        right: 45%;
+        height: 50rem;
+
+    }
+    .timeline-item:nth-child(odd){
+        margin-right: 100%;
+        text-align: right;
+    }
+    .timeline-item:nth-child(even){
+        margin-left: 20%;
+    }
+    .timeline-dot:nth-child(odd){
+        position: absolute;
+        left: 53.8%;
+    }
+}
+@media (max-width:855px){
+    .header{
+        column-gap:20%;
+    }
+    .navbar a i {
+        display: none;
+    }
+    .moro img{
+        width: 16rem;
+        height: 16rem;
+        margin-left: -70%;
+
+    }
+    .home h1{
+        margin-top: 10%;
+    }
+    .skill{
+        flex-wrap: wrap;
+    
+    }
+    .home p{
+        width:80%;
+    }
+    .home{
+        margin-left: -10%;
+    }
+}
+@media (max-width:805px){
+    .header{
+        column-gap:10%;
+    }
+    .navbar a i {
+        display: none;
+    }
+    .moro img{
+        width: 16rem;
+        height: 16rem;
+        margin-left: -70%;
+
+    }
+    .home p{
+        width: 90%;
+    }
+    .home h1{
+        margin-top: 10%;
+        font-size: 2rem;
+    }
+    .skill{
+        flex-wrap: wrap;
+    
+    }
+    section .timelineitems::before{
+        right: 45%;
+        height: 50rem;
+
+    }
+    .timeline-item:nth-child(odd){
+        margin-right: 140%;
+        text-align: right;
+    }
+    .timeline-item:nth-child(even){
+        margin-left: 20%;
+    }
+    .timeline-dot:nth-child(odd){
+        position: absolute;
+        left: 53.4%;
+    }
+}
+@media (max-width:768px){
+    .skill img{
+        margin-top: 30px;
+        width: 80px;
+        height: 80px;
+        border-radius: 10%;
+    }    
+    .logo{
+        padding-left: 2%;
+        font-size:1.2rem ;
+    }
+    .moro img {
+        width: 16rem;
+        height: 16rem;
+        margin-left: -60%;
+    }
+    .header{
+        column-gap: 35%;
+    }
+    .home h1{
+        margin-top: 10%;
+    }
+    .home p{
+        margin-top:0% ;
+        width:90%;
+    }
+    .home h2{
+        margin-top:10% ;
+        font-size: 1.2rem;
+        width: 200%;
+    }
+    .heading{
+        margin-bottom: 20%;
+        margin-left: 0%;
+    }
+    section .timelineitems::before{
+        right: 50%;
+        height: 50rem;
+
+    }
+    .timeline-item:nth-child(odd){
+        margin-right: 150%;
+        text-align: right;
+    }
+    .timeline-item:nth-child(even){
+        margin-LEFT: 0%;
+    }
+    .timeline-dot:nth-child(odd){
+        position: absolute;
+        left: 48.4%;
+    }
+    .skill div{
+        width: 150px;
+        height: 150px;
+    }
+    #skills H1{
+        margin-left: 0%;
+    }
+    .skill{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        column-gap: 30px;
+        font-size: 100px;
+        margin-left: 0%;
+    
+    }
+    footer{
+        margin-left: 20%;
+    }
+    .contact{
+        margin-left: 0%;
+    }
+    .informations input{
+        width: 400px;
+    }
+    .message textarea{
+        width: 320px;
+    }
+    .contact div button{
+        margin-left: 30%;
+        width: 150px;
+    }
+    footer{
+        margin-right: 20%;
+    }
+}
+@media (max-width:730px){ 
+    .logo{
+        padding-left: 2%;
+        font-size:1.2rem ;
+    }
+    .moro img {
+        width: 15rem;
+        height: 15rem;
+        margin-left: -50%;
+    }
+    .header{
+        column-gap: 15%;
+    }
+    .home h1{
+        margin-top: 10%;
+    }
+    .home p{
+        margin-top:0% ;
+        width:100%;
+    }
+    .home h2{
+        margin-top:10% ;
+        font-size: 1.2rem;
+        width: 200%;
+    }
+    .heading{
+        margin-bottom: 20%;
+        margin-left: 0%;
+    }
+    section .timelineitems::before{
+        right: 50%;
+        height: 50rem;
+
+    }
+    .timeline-item:nth-child(odd){
+        margin-right: 180%;
+        text-align: right;
+    }
+    .timeline-item:nth-child(even){
+        margin-left: 20%;
+    }
+    .timeline-dot:nth-child(odd){
+        position: absolute;
+        left: 50;
+    }
+    .skill div{
+        width: 150px;
+        height: 150px;
+    }
+    #skills H1{
+        margin-left: 0%;
+    }
+    .skill{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        column-gap: 30px;
+        font-size: 100px;
+        margin-left: 0%;
+    
+    }
+    footer{
+        margin-left: 20%;
+    }
+    .contact{
+        margin-left: 0%;
+    }
+    .informations input{
+        width: 400px;
+    }
+    .message textarea{
+        width: 320px;
+    }
+    .contact div button{
+        margin-left: 30%;
+        width: 150px;
+    }
+    footer{
+        margin-right: 20%;
+    }
+}
+@media (max-width:670px){
+    .skill img{
+        margin-top: 30px;
+        width: 70px;
+        height: 70px;
+        border-radius: 10%;
+    }       
+    .logo{
+        padding-left: 2%;
+        font-size:1.2rem ;
+    }
+    .moro img {
+        width: 15rem;
+        height: 15rem;
+        margin-left: -45%;
+        top: 10%;
+    }
+    .header{
+        column-gap: 15%;
+    }
+    .home h1{
+        margin-top: 10%;
+    }
+    .home p{
+        margin-top:0% ;
+        width:100%;
+        font-size: 0.6rem;
+    }
+    .home h2{
+        margin-top:10% ;
+        font-size: 1.2rem;
+        width: 200%;
+    }
+    .home{
+        margin-left: -13%;
+    }
+    .heading{
+        margin-bottom: 20%;
+        margin-left: 20%;
+    }
+    section .timelineitems::before{
+        right: 50%;
+        height: 50rem;
+
+    }
+    .timeline-item:nth-child(odd){
+        margin-right: 230%;
+        text-align: right;
+    }
+    .timeline-item:nth-child(even){
+        margin-left: 20%;
+    }
+    .timeline-dot:nth-child(odd){
+        position: absolute;
+        left: 50;
+    }
+    .skill div{
+        width: 130px;
+        height: 130px;
+    }
+    #skills H1{
+        margin-left: 10%;
+    }
+    .skill{
+        width: 100%;
+        flex-wrap: wrap;
+        column-gap: 30px;
+        font-size: 100px;
+        margin-left: 0%;
+    
+    }
+    .heading{
+        font-size: 5rem;
+        margin-right: 20%;
+    }
+    #skills h1{
+        font-size: 5rem;
+
+    }
+    #contact h1{
+        font-size: 5rem;
+
+    }
+    footer{
+        margin-left: 20%;
+    }
+    .contact{
+        margin-left: 0%;
+    }
+    .informations input{
+        width: 300px;
+    }
+    .message textarea{
+        width: 280px;
+    }
+    .contact div button{
+        margin-left: 30%;
+        width: 150px;
+    }
+    footer{
+        margin-right: 00%;
+    }
+}
+@media (max-width:585px){
+    .header{
+        column-gap:65%;
+    }
+    .navbar a i {
+        display: flex;
+    }
+    .sidebar{
+        height: 50vh;
+    }
+    .hidephone{
+        display: none;
+    }
+    .moro img{
+        margin-top: 20%;
+        margin-bottom: 0%;
+        width: 16rem;
+        height: 16rem;
+        margin-left: -50%;
+
+    }
+    .home h1{
+        margin-top: 10%;
+    }
+    .skill{
+        flex-wrap: wrap;
+    
+    }
+    .home{
+        flex-direction: column-reverse;
+        margin-left: 10%;
+    }
+    .home p{
+        width:70%;
+    }
+    .skill{
+        flex-wrap: wrap;
+    }
+    footer{
+        width: 100%;
+        margin-left: 0%;
+    }
+    section .timelineitems::before{
+        right: 50%;
+        height: 50rem;
+
+    }
+    .timeline-item:nth-child(odd){
+        margin-right: 300%;
+        text-align: right;
+    }
+    .timeline-item:nth-child(even){
+        margin-left: 20%;
+    }
+    .timeline-dot:nth-child(odd){
+        position: absolute;
+        left: 48%;
+    }
+
+}
+@media (max-width:530px){
+    section .timelineitems::before{
+        left: 0%;
+        height: 50rem;
+
+    }
+    .timeline-item:nth-child(odd){
+        margin-right: 300%;
+        text-align: right;
+    }
+    .timeline-item:nth-child(even){
+        margin-right: 300%;
+    }
+    .timeline-dot:nth-child(odd){
+        position: absolute;
+        left: -1%;
+    }
+    #contact h1{
+        font-size: 3rem;
+
+    }
+
+}
+@media (max-width:506px){
+    .header{
+        column-gap:40%;
+    }
+    .navbar a i {
+        display: flex;
+    }
+    .hidephone{
+        display: none;
+    }
+    .moro img{
+        width: 16rem;
+        height: 16rem;
+        margin-top: 20%;
+        margin-left: -40%;
+
+    }
+    .home{
+        margin-left: -10%;
+    }
+    .home h1{
+        margin-top: 10%;
+    }
+    .skill{
+        flex-wrap: wrap;
+    
+    }
+    .home{
+        flex-direction: column-reverse;
+    }
+    .home p{
+        width:100%;
+    }
+    .skill{
+        width: 100%;
+        margin-left: 4%;
+        flex-wrap: wrap;
+    }
+    .contact{
+        margin-left: 0%;
+    }
+    .heading{
+        font-size: 4rem;
+    }
+    #skills h1{
+        font-size: 4rem;
+
+    }
+    #contact h1{
+        font-size: 3.5rem;
+
+    }
+    .informations input{
+        width: 200px;
+    }
+    .message textarea{
+        width: 160px;
+    }
+    .contact div button{
+        margin-left: 0%;
+        width: 150px;
+    }
+    section .timelineitems::before{
+        left: 0%;
+        height: 50rem;
+
+    }
+    .timeline-item:nth-child(odd){
+        margin-right: 300%;
+        text-align: right;
+    }
+    .timeline-item:nth-child(even){
+        margin-right: 300%;
+    }
+    .timeline-dot:nth-child(odd){
+        position: absolute;
+        left: -1%;
+    }
+}
+@media (max-width:425px){
+    .skill img{
+        margin-top: 10px;
+        width: 40px;
+        height: 40px;
+        border-radius: 10%;
+    }    
+    .logo{
+        padding-left: 10%;
+        font-size: 1.2rem;
+    }
+    .home{
+        flex-direction: column-reverse;
+    }
+    .navbar a i {
+        display: flex;
+    }
+    .header{
+        column-gap: 40%;
+    }
+    .hidephone{
+        display: none;
+    }
+    .moro img {
+        width: 16rem;
+        height: 16rem;
+        margin-top: 30%;
+        margin-left: -45%;
+    }
+    .home h1{
+        width: 100%;
+        display: flex;
+        column-gap: 20px;
+        font-size: 2.5rem;
+        margin-top: 10%;
+    }
+    .home h2{
+        width: 200%;
+        font-size: 1.3rem;
+    }
+    .home p{
+        width: 100%;
+    }
+    .homecontent{
+        margin-left: 0%;
+    }
+    .heading{
+        margin-top: 30%;
+        margin-left: 20%;
+    }
+    section .timelineitems::before{
+        right: 98%;
+        height: 50rem;
+
+    }
+    .timeline-item:nth-child(odd){
+        margin-right: 700%;
+        text-align: right;
+    }
+    .timeline-item:nth-child(even){
+        margin-right: 720%;
+    }
+    .timeline-dot:nth-child(odd){
+        position: absolute;
+        left: -1%;
+    }
+    .skill div{
+        width: 70px;
+        height: 70px;
+    }
+    #skills H1{
+        margin-left: 0%;
+        width: 100%;
+    }
+    .skill{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        column-gap: 30px;
+        font-size: 50px;
+        margin-left: 0%;
+    
+    }
+    footer{
+        margin-left: -50%;
+        width: 200%;
+    }
+    .contact{
+        margin-left: 0%;
+    }
+    #contact h1{
+        display: flex;
+        column-gap: 20PX;
+        margin-right: 0%;
+        font-size: 3.5rem;
+    }
+    .informations input{
+        width: 200px;
+    }
+    .message textarea{
+        width: 160px;
+    }
+    .contact div button{
+        margin-left: 0%;
+        width: 150px;
+    }
+}
+@media (max-width:400px){
+    section .timelineitems::before{
+        right: 98%;
+        height: 50rem;
+
+    }
+    .timeline-item:nth-child(odd){
+        margin-right: 900%;
+        text-align: right;
+    }
+    .timeline-item:nth-child(even){
+        margin-right: 920%;
+    }
+    .timeline-dot:nth-child(odd){
+        position: absolute;
+        left: -1%;
+    }
+}
+@media (max-width:376px){
+    .sidebar{
+        right: 0px;
+        width: 30%;
+    }
+    .logo{
+        padding-left: 10%;
+        font-size: 1.2rem;
+    }
+    .home{
+        flex-direction: column-reverse;
+    }
+    .navbar a i {
+        display: flex;
+    }
+    .header{
+        column-gap: 30%;
+    }
+    .hidephone{
+        display: none;
+    }
+    .moro img {
+        width: 16rem;
+        height: 16rem;
+        margin-top: 30%;
+        margin-left: -50%;
+    }
+    .home h1{
+        width: 100%;
+        display: flex;
+        column-gap: 20px;
+        font-size: 2.3rem;
+        margin-top: 10%;
+    }
+    .home h2{
+        width: 200%;
+        font-size: 1.2rem;
+    }
+    .home p{
+        width: 100%;
+    }
+    .homecontent{
+        margin-left: -10%;
+    }
+    .heading{
+        margin-top: 30%;
+        font-size: 3rem;        
+        margin-left: 10%;
+    }
+    .timeline-item:nth-child(odd){
+        margin-right: 1600%;
+        text-align: right;
+    }
+    .timeline-item:nth-child(even){
+        margin-right: 1550%;
+    }
+    .timeline-dot:nth-child(odd){
+        position: absolute;
+        left: 0%;
+    }
+    .skill div{
+        width: 90px;
+        height: 90px;
+    }
+    #skills H1{
+        margin-left: 0%;
+        width: 100%;
+    }
+    .skill{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 30px;
+        font-size: 70px;
+        margin-left: 0%;
+    
+    }
+    footer{
+        width: 200%;
+        margin-left: -50%;
+        font-size: 1rem;
+    }
+    .contact{
+        margin-left: 0%;
+    }
+    #contact h1{
+        display: flex;
+        column-gap: 20PX;
+        margin-left: -10%;
+        font-size: 3rem;
+    }
+    .informations input{
+        width: 150px;
+    }
+    .message textarea{
+        width: 200px;
+    }
+    .contact div button{
+        margin-left: 0%;
+        width: 150px;
+    }
+    .heading{
+        font-size: 3rem;
+    }
+    #skills h1{
+        font-size: 3rem;
+
+    }
+    #contact h1{
+        font-size: 3rem;
+
+    }
+}
+@media (max-width:360px){
+    section .timelineitems::before{
+        right: 98%;
+        height: 50rem;
+
+    }
+    .timeline-item:nth-child(odd){
+        margin-right: 3500%;
+        text-align: right;
+    }
+    .timeline-item:nth-child(even){
+        margin-right: 3500%;
+    }
+    .timeline-dot:nth-child(odd){
+        position: absolute;
+        left: -1%;
+    }
+}
+@media (max-width:350px){
+    section .timelineitems::before{
+        right: 98%;
+        height: 50rem;
+
+    }
+    .timelineitems {
+        margin-left: 40px; /* Reduced margin to fit small screens */
+        width: calc(100% - 60px); /* Account for margins */
+    }
+    
+    section .timelineitems::before {
+        left: 0; /* Align timeline to the left */
+        height: 52rem;
+    }
+    
+    .timeline-item {
+        width: calc(100% - 30px); /* Full width minus some spacing */
+        margin: 0 0 30px 30px !important; /* Override all other margin settings */
+    }
+    
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even) {
+        margin-right: 50%;
+        margin-left: 0;
+        text-align:left; /* Align all text to left for consistency */
+    }
+    
+    .timeline-dot:nth-child(odd) {
+        left: 0; /* Align dots to the left */
+        margin-left: -10px; /* Center the dot on the line */
+    }
+    
+    .lineitemcontent {
+        width: 100%; /* Make content boxes full width */
+        max-width: 200px; /* But don't let them get too wide */
+    }
+    /* Add a transition for smoother layout changes */
+    .timeline-item {
+    transition: all 0.3s ease-in-out;
+    }
+
+    /* Ensure content stays within bounds */
+    .lineitemcontent {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    }
+}
+@media (max-width:320px){
+    .logo{
+        padding-top: 1%;
+        padding-left: 10%;
+        font-size: 1rem;
+    }
+    .moro img{
+        left: 130%;
+    }
+    .home{
+        flex-direction: column-reverse;
+        margin-left: 0%;
+    }
+    .navbar a i {
+        display: flex;        font-size: 1.5rem;
+    }
+    .header{
+        column-gap: 30%;
+    }
+    .hidephone{
+        display: none;
+    }
+    .moro img {
+        width: 14rem;
+        height: 14rem;
+        margin-top: 30%;
+        margin-left: -130%;
+    }
+    .home h1{
+        width: 100%;
+        display: flex;
+        column-gap: 20px;
+        font-size: 2rem;
+        margin-top: 10%;
+    }
+    .home h2{
+        
+        width: 300%;
+        font-size: 0.9rem;
+        margin-bottom: 10%;
+    }
+    .home p{
+        width: 120%;    
+        font-size: 0.6rem;
+    }
+    .home{
+        padding-left:15% ;
+
+    }
+    .homecontent{
+        padding-left:0 ;
+        width: 100%;
+        margin-left: -20%;
+    }
+    .heading{
+        font-size: 2.5rem;
+        margin-top: 30%;
+        margin-left: 20%;
+    }
+    section .timelineitems::before{
+        right: 98%;
+        height: 50rem;
+
+    }
+    .timelineitems {
+        margin-left: 40px; /* Reduced margin to fit small screens */
+        width: calc(100% - 60px); /* Account for margins */
+    }
+    
+    section .timelineitems::before {
+        left: 0; /* Align timeline to the left */
+        height: 52rem;
+    }
+    
+    .timeline-item {
+        width: calc(100% - 30px); /* Full width minus some spacing */
+        margin: 0 0 30px 30px !important; /* Override all other margin settings */
+    }
+    
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even) {
+        margin-right: 0 !important;
+        margin-left: 30px !important;
+        text-align: left; /* Align all text to left for consistency */
+    }
+    
+    .timeline-dot:nth-child(odd) {
+        left: 0; /* Align dots to the left */
+        margin-left: -10px; /* Center the dot on the line */
+    }
+    
+    .lineitemcontent {
+        width: 100%; /* Make content boxes full width */
+        max-width: 200px; /* But don't let them get too wide */
+    }
+    /* Add a transition for smoother layout changes */
+    .timeline-item {
+    transition: all 0.3s ease-in-out;
+    }
+
+    /* Ensure content stays within bounds */
+    .lineitemcontent {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    }
+    .skill div{
+
+        width: 80px;
+        height: 80px;
+    }
+    #skills H1{
+        font-size: 2.5rem;
+        margin-left: -50%;
+        width: 200%;
+    }
+    .skill{
+        flex-wrap: wrap;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        column-gap: 30px;
+        font-size: 60px;
+        margin-left: 0%;
+    
+    }
+    footer{
+        margin-left: -50%;
+        width: 200%;
+        font-size: 1rem;
+    }
+    .contact{
+        margin-left: 1.5%;
+    }
+    #contact h1{
+        display: flex;
+        column-gap: 20PX;
+        margin-left: 0%;
+        font-size: 2.5rem;
+    }
+    .informations input{
+        width: 155px;
+    }
+    .message textarea{
+        width: 140px;
+    }
+    .contact div button{
+        margin-left: -10%;
+        width: 150px;
+    }
+}
+@media (max-width:270px){
+    .header{
+        column-gap:20%;
+    }
+    .navbar a i {
+        display: flex;
+    }
+    .hidephone{
+        display: none;
+    }
+    .moro img{
+        width: 12rem;
+        height: 12rem;
+        margin-top: 30%;
+        left: 125%;
+
+    }
+    .home h1{
+        margin-top: 0%;
+        
+        font-size: 1.5rem;
+    }
+    .home h2{
+        font-size: 0.8rem;
+        width: 300%;
+    }
+    .skill{
+        flex-wrap: wrap;
+    
+    }
+    .home{
+        flex-direction: column-reverse;
+    }
+    .home p{
+        width:100%;
+    }
+    .skill{
+        flex-wrap: wrap;
+    }
+    #contact h1{
+        font-size: 2rem;
+    }
+    #skills h1{
+        font-size: 2rem;
+    }
+    #skills{
+        margin-top: 200%;
+    }
+    footer  {
+        font-size: 0.5rem;
+    }
+    section .timelineitems::before {
+        left: 0; /* Align timeline to the left */
+        height: 58rem;
+    }
+    .contact{
+        margin-left: 0%;
+    }
+    #contact h1{
+        display: flex;
+        column-gap: 20PX;
+        margin-left: 0%;
+        font-size: 1.5rem;
+    }
+    .informations input{
+        width: 80px;
+    }
+    .message textarea{
+        width: 100px;
+    }
+    .contact div button{
+        margin-left: 0%;
+        width: 100px;
+    }
+}
+@media (max-width:217px){
+    .header{
+        column-gap:10%;
+    }
+    .heading{
+        font-size: 2rem;
+    }
+    #skills h1{
+        font-size: 2rem;
+
+    }
+    #skills{
+        margin-top: 400%;
+    }
+    .navbar a i {
+        display: flex;
+    }
+    .moro img{
+        width: 10rem;
+        height:10rem;
+        margin-top: 15rem;
+        margin-bottom: 1rem;
+        margin-left:-145%;
+    }
+    .home h1{
+        font-size:1rem;
+    }
+    .home h2{
+        font-size:0.6rem;
+    }
+    .home{
+        margin-top: -80%;
+        margin-left: 10%;
+    }
+    .home p{
+        font-size: 0.4rem;
+    }
+    section .timelineitems::before {
+        margin-bottom: 100%;
+        left: 0; /* Align timeline to the left */
+        height: 60rem;
+    }
+}
+@media (max-width:190PX) {
+    #skills{
+        margin-top: 600%;
+    }
+}
+@media (max-width:180PX) {
+    #skills{
+        margin-top: 3000%;
+    }
+} 
