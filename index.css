@@ -62,7 +62,7 @@ body{
 }
 .navbar a {
     padding-top: 8px;
-    font-size:0.8rem ;
+    font-size:1rem ;
     color: var(--text-color);
     border-bottom: 3px solid transparent;
     font-weight:600 ;
@@ -594,6 +594,7 @@ audio::-webkit-media-controls-panel{
     background-color: var(--main-color);
 }
 @media (max-width:2992px) {
+
     .navbar a i {
         display: none;
     }
@@ -722,7 +723,7 @@ audio::-webkit-media-controls-panel{
 
     }
     .header{
-        column-gap: 60%;
+        column-gap: 55%;
     }
     .home p{
         font-size: 1.2rem;
@@ -742,6 +743,7 @@ audio::-webkit-media-controls-panel{
 
 }
 @media (max-width:1700px){
+
     section .timelineitems::before{
         right: 50%;
         height: 50rem;
@@ -760,6 +762,7 @@ audio::-webkit-media-controls-panel{
     }
 }
 @media (max-width:1560px){
+
     .home p{
         width: 70%;
         font-size: 15px;
@@ -839,7 +842,7 @@ audio::-webkit-media-controls-panel{
 
 @media (max-width:1379px){
     .header{
-        column-gap:50%;
+        column-gap:40%;
     }
     .navbar a i {
         display: none;
@@ -872,7 +875,7 @@ audio::-webkit-media-controls-panel{
         color: #080808;
     }
     .header{
-        column-gap:45%;
+        column-gap:40%;
     }
     .navbar a i {
         display: none;
@@ -924,7 +927,7 @@ audio::-webkit-media-controls-panel{
 
 @media (max-width:1024px){
     .header{
-        column-gap: 37%;
+        column-gap: 30%;
     }
     .navbar a i {
         display: none;
@@ -968,6 +971,9 @@ audio::-webkit-media-controls-panel{
     .header{
         column-gap:25%;
     }
+    .navbar a{
+        font-size: 0.9rem;
+    }
     .navbar a i {
         display: none;
     }
@@ -998,8 +1004,11 @@ audio::-webkit-media-controls-panel{
     }
 }
 @media (max-width:855px){
+    .logo{
+        padding-left: 2%;
+    }
     .header{
-        column-gap:20%;
+        column-gap:15%;
     }
     .navbar a i {
         display: none;
@@ -1025,8 +1034,11 @@ audio::-webkit-media-controls-panel{
     }
 }
 @media (max-width:805px){
+    .logo{
+        padding-left: 2%;
+    }
     .header{
-        column-gap:10%;
+        column-gap:15%;
     }
     .navbar a i {
         display: none;
@@ -1073,16 +1085,18 @@ audio::-webkit-media-controls-panel{
         border-radius: 10%;
     }    
     .logo{
+        padding-top: 1%;
         padding-left: 2%;
         font-size:1.2rem ;
     }
     .moro img {
+        margin-top: 10%;
         width: 16rem;
         height: 16rem;
         margin-left: -60%;
     }
     .header{
-        column-gap: 35%;
+        column-gap: 25%;
     }
     .home h1{
         margin-top: 10%;
@@ -1253,6 +1267,9 @@ audio::-webkit-media-controls-panel{
     .header{
         column-gap: 15%;
     }
+    .navbar a{
+        font-size: 0.8rem;
+    }
     .home h1{
         margin-top: 10%;
     }
@@ -1338,13 +1355,14 @@ audio::-webkit-media-controls-panel{
 }
 @media (max-width:585px){
     .header{
-        column-gap:65%;
+        column-gap:30%;
     }
     .navbar a i {
         display: flex;
     }
     .sidebar{
         height: 50vh;
+        margin-right: 40%;
     }
     .hidephone{
         display: none;
@@ -1417,11 +1435,13 @@ audio::-webkit-media-controls-panel{
         font-size: 3rem;
 
     }
-
+    #skills h1{
+        width: 100%;
+    }
 }
 @media (max-width:506px){
     .header{
-        column-gap:40%;
+        column-gap:30%;
     }
     .navbar a i {
         display: flex;
@@ -1506,7 +1526,7 @@ audio::-webkit-media-controls-panel{
         border-radius: 10%;
     }    
     .logo{
-        padding-left: 10%;
+        padding-left: 1%;
         font-size: 1.2rem;
     }
     .home{
@@ -1516,7 +1536,10 @@ audio::-webkit-media-controls-panel{
         display: flex;
     }
     .header{
-        column-gap: 40%;
+        column-gap: 15%;
+    }
+    .sidebar{
+        margin-right: 50%;
     }
     .hidephone{
         display: none;
@@ -1542,7 +1565,7 @@ audio::-webkit-media-controls-panel{
         width: 100%;
     }
     .homecontent{
-        margin-left: 0%;
+        margin-left: -10%;
     }
     .heading{
         margin-top: 30%;
@@ -1622,14 +1645,17 @@ audio::-webkit-media-controls-panel{
         position: absolute;
         left: -1%;
     }
+    .home{
+        padding-left: -200%;
+    }
 }
 @media (max-width:376px){
     .sidebar{
         right: 0px;
-        width: 30%;
+        width: 20%;
     }
     .logo{
-        padding-left: 10%;
+        padding-left: 1%;
         font-size: 1.2rem;
     }
     .home{
@@ -1639,7 +1665,7 @@ audio::-webkit-media-controls-panel{
         display: flex;
     }
     .header{
-        column-gap: 30%;
+        column-gap: 20%;
     }
     .hidephone{
         display: none;
@@ -1681,7 +1707,7 @@ audio::-webkit-media-controls-panel{
     }
     .timeline-dot:nth-child(odd){
         position: absolute;
-        left: 0%;
+        left: -2%;
     }
     .skill div{
         width: 90px;
@@ -1738,6 +1764,21 @@ audio::-webkit-media-controls-panel{
     }
 }
 @media (max-width:360px){
+    .header{
+        column-gap: 15%;
+    }
+    .logo{
+        padding-left: 1%;
+    }
+    .sidebar{
+        margin-right: 40%;
+    }
+    .home h2{
+        font-size: 1.1rem;
+    }
+    .homecontent{
+        margin-left: -15%;
+    }
     section .timelineitems::before{
         right: 98%;
         height: 50rem;
@@ -1756,6 +1797,21 @@ audio::-webkit-media-controls-panel{
     }
 }
 @media (max-width:350px){
+    .header{
+        column-gap: 10%;
+    }
+    .home h1{
+        font-size: 2rem;
+    }
+    .homecontent{
+        margin-left: -15%;
+    }
+    .home h2{
+        font-size: 1.075rem;
+    }
+    .sidebar{
+        margin-right: 50%;
+    }
     section .timelineitems::before{
         right: 98%;
         height: 50rem;
@@ -1802,12 +1858,18 @@ audio::-webkit-media-controls-panel{
     word-wrap: break-word;
     overflow-wrap: break-word;
     }
+    #skills{
+        margin-top: 140%;
+    }
 }
 @media (max-width:320px){
     .logo{
-        padding-top: 1%;
-        padding-left: 10%;
+        padding-top: 0.5%;
+        padding-left: 1%;
         font-size: 1rem;
+    }
+    .sidebar{
+        margin-right: 55%;
     }
     .moro img{
         left: 130%;
@@ -1817,13 +1879,15 @@ audio::-webkit-media-controls-panel{
         margin-left: 0%;
     }
     .navbar a i {
-        display: flex;        font-size: 1.5rem;
+        display: flex;        
+        font-size: 1.5rem;
     }
     .header{
-        column-gap: 30%;
+        column-gap: 15%;
     }
     .hidephone{
         display: none;
+
     }
     .moro img {
         width: 14rem;
@@ -1834,8 +1898,9 @@ audio::-webkit-media-controls-panel{
     .home h1{
         width: 100%;
         display: flex;
+        flex-wrap: nowrap;
         column-gap: 20px;
-        font-size: 2rem;
+        font-size: 1.8rem;
         margin-top: 10%;
     }
     .home h2{
@@ -1913,6 +1978,9 @@ audio::-webkit-media-controls-panel{
         width: 80px;
         height: 80px;
     }
+    #skills{
+        margin-top: 120%;
+    }
     #skills H1{
         font-size: 2.5rem;
         margin-left: -50%;
@@ -1953,9 +2021,34 @@ audio::-webkit-media-controls-panel{
         width: 150px;
     }
 }
-@media (max-width:270px){
+@media (max-width:314px){
+    section .timelineitems::before{
+        left: 0%;
+        height: 55rem;
+
+    }
+    .home h1{
+        font-size: 1.7rem;
+        width:3000%
+    }
     .header{
-        column-gap:20%;
+        column-gap: 8%;
+    }
+    .sidebar{
+        margin-right: 63%;
+    }
+    .homecontent{
+        margin-left: -20%;
+    }
+}
+@media (max-width:270px){
+    section .timelineitems::before{
+        left: 0%;
+        height: 2000rem;
+
+    }
+    .header{
+        column-gap:5%;
     }
     .navbar a i {
         display: flex;
@@ -1966,13 +2059,13 @@ audio::-webkit-media-controls-panel{
     .moro img{
         width: 12rem;
         height: 12rem;
-        margin-top: 30%;
+        margin-top: 40%;
         left: 125%;
 
     }
     .home h1{
         margin-top: 0%;
-        
+        display: flex;
         font-size: 1.5rem;
     }
     .home h2{
@@ -1985,6 +2078,9 @@ audio::-webkit-media-controls-panel{
     }
     .home{
         flex-direction: column-reverse;
+    }
+    .homecontent{
+        margin-left: -20%;
     }
     .home p{
         width:100%;
@@ -2029,8 +2125,20 @@ audio::-webkit-media-controls-panel{
     }
 }
 @media (max-width:217px){
+    section .timelineitems::before{
+        left: 0%;
+        height: 100rem;
+
+    }
     .header{
-        column-gap:10%;
+        column-gap:3%;
+    }
+    .logo{
+        font-size: 0.8rem;
+    }
+    .sidebar{
+        margin-right: 65%;
+        height: 39vh;
     }
     .heading{
         font-size: 2rem;
@@ -2050,7 +2158,7 @@ audio::-webkit-media-controls-panel{
         height:10rem;
         margin-top: 15rem;
         margin-bottom: 1rem;
-        margin-left:-145%;
+        margin-left:-133%;
     }
     .home h1{
         font-size:1rem;
@@ -2060,7 +2168,7 @@ audio::-webkit-media-controls-panel{
     }
     .home{
         margin-top: -80%;
-        margin-left: 10%;
+        margin-left: 0%;
     }
     .home p{
         font-size: 0.4rem;
@@ -2073,11 +2181,36 @@ audio::-webkit-media-controls-panel{
 }
 @media (max-width:190PX) {
     #skills{
-        margin-top: 600%;
+        margin-top: 900%;
     }
 }
 @media (max-width:180PX) {
     #skills{
+        margin-top: 1000%;
+    }
+}
+@media (max-width:174PX) {
+    #skills{
+        margin-top: 1500%;
+    }
+} 
+@media (max-width:167PX) {
+    #skills{
         margin-top: 3000%;
+    }
+} 
+@media (max-width:154PX) {
+    #skills{
+        margin-top: 4000%;
+    }
+} 
+@media (max-width:120PX) {
+    #skills{
+        margin-top: 5000%;
+    }
+} 
+@media (max-width:100PX) {
+    #skills{
+        margin-top: 6000%;
     }
 } 
