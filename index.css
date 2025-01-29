@@ -663,6 +663,9 @@ audio::-webkit-media-controls-panel{
 
 }
 @media (max-width:2500px){
+    .header{
+        column-gap: 65%;
+    }
     section .timelineitems::before{
         right: 50%;
         height: 50rem;
@@ -747,7 +750,7 @@ audio::-webkit-media-controls-panel{
 }
 @media (max-width:1700px){
     .header{
-        column-gap: 40%;
+        column-gap: 55%;
     }
     section .timelineitems::before{
         right: 50%;
@@ -768,7 +771,7 @@ audio::-webkit-media-controls-panel{
 }
 @media (max-width:1560px){
     .header{
-        column-gap: 15%;
+        column-gap: 55%;
     }
     .home p{
         width: 70%;
@@ -791,6 +794,9 @@ audio::-webkit-media-controls-panel{
     }
 }
 @media (max-width:1440px){
+    #skills{
+        margin-top: 30%;
+    }
     .navbar a i {
         display: none;
     }
@@ -882,7 +888,7 @@ audio::-webkit-media-controls-panel{
         color: #080808;
     }
     .header{
-        column-gap:40%;
+        column-gap:38%;
     }
     .navbar a i {
         display: none;
@@ -919,8 +925,12 @@ audio::-webkit-media-controls-panel{
     }
 }
 @media (max-width:1100px){
+    .timeline-dot:nth-child(odd){
+        position: absolute;
+        left: 48.8%;
+    }
     .header{
-        column-gap:35%;
+        column-gap:33%;
     }
     .navbar a i {
         display: none;
@@ -945,7 +955,7 @@ audio::-webkit-media-controls-panel{
 
     }
     .timeline-item:nth-child(odd){
-        margin-right: 70%;
+        margin-right: 75%;
         text-align: right;
     }
     .timeline-item:nth-child(even){
@@ -973,10 +983,13 @@ audio::-webkit-media-controls-panel{
     .home p{
         width: 60%;
     }
+    #skills{
+        margin-top: -18%;
+    }
 }
 @media (max-width:980px){
     .header{
-        column-gap:25%;
+        column-gap:22%;
     }
     .navbar a{
         font-size: 0.9rem;
@@ -1313,7 +1326,7 @@ audio::-webkit-media-controls-panel{
         text-align: right;
     }
     .timeline-item:nth-child(even){
-        margin-left: 20%;
+        margin-left: 10%;
     }
     .timeline-dot:nth-child(odd){
         position: absolute;
@@ -1421,7 +1434,7 @@ audio::-webkit-media-controls-panel{
         text-align: right;
     }
     .timeline-item:nth-child(even){
-        margin-left: 0%;
+        margin-left: -10%;
     }
     .timeline-dot:nth-child(odd){
         position: absolute;
@@ -1436,6 +1449,9 @@ audio::-webkit-media-controls-panel{
     #skills h1{
         font-size: 3.2rem;
         margin-right: 13%;
+    }
+    #skills{
+        margin-top: 10%;
     }
 }
 @media (max-width:530px){
@@ -2101,6 +2117,9 @@ audio::-webkit-media-controls-panel{
     #contact h1{
         font-size: 2.3rem;
     }
+    #skills{
+        margin-top: 150%;
+    }
 }
 @media (max-width:270px){
     .sidebar{
@@ -2202,6 +2221,9 @@ audio::-webkit-media-controls-panel{
     .informations input{
         width: 70px;
     }
+    #skills{
+        margin-top: 500%;
+    }
 }
 @media (max-width:217px){
     footer p {
@@ -2235,7 +2257,7 @@ audio::-webkit-media-controls-panel{
 
     }
     #skills{
-        margin-top: 400%;
+        margin-top: 650%;
     }
     .navbar a i {
         display: flex;
@@ -2282,12 +2304,12 @@ audio::-webkit-media-controls-panel{
 }
 @media (max-width:180PX) {
     #skills{
-        margin-top: 1000%;
+        margin-top: 1100%;
     }
 }
 @media (max-width:174PX) {
     #skills{
-        margin-top: 1500%;
+        margin-top: 1900%;
     }
     .header{
         column-gap: 5%;
