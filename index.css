@@ -15,7 +15,9 @@
     --main-color:#FFD700;
 
 }
-
+html{
+    overflow-x: hidden
+}
 body{
     font-size: 60%;
     overflow-x: hidden;
@@ -70,6 +72,7 @@ body{
     margin-bottom: -30px;
 }
 .navbar a i{
+    position: fixed;
     margin-top:-5px;
     font-size: 30px;
 }
@@ -1032,6 +1035,9 @@ audio::-webkit-media-controls-panel{
     .home{
         margin-left: -10%;
     }
+    .informations input{
+        width: 350px;
+    }
 }
 @media (max-width:805px){
     .logo{
@@ -1075,6 +1081,9 @@ audio::-webkit-media-controls-panel{
     .timeline-dot:nth-child(odd){
         position: absolute;
         left: 53.4%;
+    }
+    .informations input{
+        width: 300px;
     }
 }
 @media (max-width:768px){
@@ -1153,7 +1162,7 @@ audio::-webkit-media-controls-panel{
         margin-left: 0%;
     }
     .informations input{
-        width: 400px;
+        width: 300px;
     }
     .message textarea{
         width: 320px;
@@ -1234,7 +1243,7 @@ audio::-webkit-media-controls-panel{
         margin-left: 0%;
     }
     .informations input{
-        width: 400px;
+        width: 300px;
     }
     .message textarea{
         width: 320px;
@@ -1340,10 +1349,10 @@ audio::-webkit-media-controls-panel{
         margin-left: 0%;
     }
     .informations input{
-        width: 300px;
+        width: 280px;
     }
     .message textarea{
-        width: 280px;
+        width: 260px;
     }
     .contact div button{
         margin-left: 30%;
@@ -1355,14 +1364,16 @@ audio::-webkit-media-controls-panel{
 }
 @media (max-width:585px){
     .header{
-        column-gap:30%;
+        column-gap:50%;
     }
     .navbar a i {
         display: flex;
+        position: fixed;
     }
     .sidebar{
         height: 50vh;
-        margin-right: 40%;
+        margin-right: 5%;
+        width: 20%;
     }
     .hidephone{
         display: none;
@@ -1412,7 +1423,16 @@ audio::-webkit-media-controls-panel{
         position: absolute;
         left: 48%;
     }
-
+    .informations input{
+        width: 220px;
+    }
+    #contact h1{
+        font-size: 3.2rem;
+    }
+    #skills h1{
+        font-size: 3.2rem;
+        margin-right: 13%;
+    }
 }
 @media (max-width:530px){
     section .timelineitems::before{
@@ -1437,11 +1457,20 @@ audio::-webkit-media-controls-panel{
     }
     #skills h1{
         width: 100%;
+        margin-left: -0%;
+    }
+    .sidebar{
+        height: 40vh;
+        margin-right: 0%;
+        width: 20%;
+    }
+    .informations input{
+        width: 190px;
     }
 }
 @media (max-width:506px){
     .header{
-        column-gap:30%;
+        column-gap:50%;
     }
     .navbar a i {
         display: flex;
@@ -1536,10 +1565,11 @@ audio::-webkit-media-controls-panel{
         display: flex;
     }
     .header{
-        column-gap: 15%;
+        column-gap: 40%;
     }
     .sidebar{
-        margin-right: 50%;
+        margin-right: 0%;
+        width: 25%;
     }
     .hidephone{
         display: none;
@@ -1629,6 +1659,9 @@ audio::-webkit-media-controls-panel{
     }
 }
 @media (max-width:400px){
+    footer p{
+        font-size: 0.9rem;
+    }
     section .timelineitems::before{
         right: 98%;
         height: 50rem;
@@ -1648,11 +1681,17 @@ audio::-webkit-media-controls-panel{
     .home{
         padding-left: -200%;
     }
+    #contact h1{
+        font-size: 3rem;
+    }
+    .informations input{
+        width: 150px;
+    }
 }
 @media (max-width:376px){
     .sidebar{
-        right: 0px;
-        width: 20%;
+        margin-right: 1%;
+        width: 28%;
     }
     .logo{
         padding-left: 1%;
@@ -1665,7 +1704,7 @@ audio::-webkit-media-controls-panel{
         display: flex;
     }
     .header{
-        column-gap: 20%;
+        column-gap: 40%;
     }
     .hidephone{
         display: none;
@@ -1738,11 +1777,11 @@ audio::-webkit-media-controls-panel{
     #contact h1{
         display: flex;
         column-gap: 20PX;
-        margin-left: -10%;
+        margin-left: -0%;
         font-size: 3rem;
     }
     .informations input{
-        width: 150px;
+        width: 120px;
     }
     .message textarea{
         width: 200px;
@@ -1765,13 +1804,13 @@ audio::-webkit-media-controls-panel{
 }
 @media (max-width:360px){
     .header{
-        column-gap: 15%;
+        column-gap: 40%;
     }
     .logo{
         padding-left: 1%;
     }
     .sidebar{
-        margin-right: 40%;
+        margin-right: 0%;
     }
     .home h2{
         font-size: 1.1rem;
@@ -1795,10 +1834,13 @@ audio::-webkit-media-controls-panel{
         position: absolute;
         left: -1%;
     }
+    .informations input{
+        width: 120px;
+    }
 }
 @media (max-width:350px){
     .header{
-        column-gap: 10%;
+        column-gap: 35%;
     }
     .home h1{
         font-size: 2rem;
@@ -1810,7 +1852,7 @@ audio::-webkit-media-controls-panel{
         font-size: 1.075rem;
     }
     .sidebar{
-        margin-right: 50%;
+        margin-right: 0%;
     }
     section .timelineitems::before{
         right: 98%;
@@ -1861,6 +1903,9 @@ audio::-webkit-media-controls-panel{
     #skills{
         margin-top: 140%;
     }
+    .informations input{
+        width: 110px;
+    }
 }
 @media (max-width:320px){
     .logo{
@@ -1869,7 +1914,7 @@ audio::-webkit-media-controls-panel{
         font-size: 1rem;
     }
     .sidebar{
-        margin-right: 55%;
+        margin-right: 0%;
     }
     .moro img{
         left: 130%;
@@ -1883,7 +1928,7 @@ audio::-webkit-media-controls-panel{
         font-size: 1.5rem;
     }
     .header{
-        column-gap: 15%;
+        column-gap: 37%;
     }
     .hidephone{
         display: none;
@@ -1910,7 +1955,7 @@ audio::-webkit-media-controls-panel{
         margin-bottom: 10%;
     }
     .home p{
-        width: 120%;    
+        width: 100%;    
         font-size: 0.6rem;
     }
     .home{
@@ -1920,7 +1965,7 @@ audio::-webkit-media-controls-panel{
     .homecontent{
         padding-left:0 ;
         width: 100%;
-        margin-left: -20%;
+        margin-left: -15%;
     }
     .heading{
         font-size: 2.5rem;
@@ -2011,7 +2056,7 @@ audio::-webkit-media-controls-panel{
         font-size: 2.5rem;
     }
     .informations input{
-        width: 155px;
+        width: 110px;
     }
     .message textarea{
         width: 140px;
@@ -2022,6 +2067,15 @@ audio::-webkit-media-controls-panel{
     }
 }
 @media (max-width:314px){
+    .informations input{
+        width: 100px;
+    }
+    footer p{
+        font-size: 0.8rem;
+    }
+    footer a{
+        font-size: 0.8rem;
+    }
     section .timelineitems::before{
         left: 0%;
         height: 55rem;
@@ -2032,23 +2086,30 @@ audio::-webkit-media-controls-panel{
         width:3000%
     }
     .header{
-        column-gap: 8%;
+        column-gap: 35%;
     }
     .sidebar{
-        margin-right: 63%;
+        margin-right: 0%;
     }
     .homecontent{
-        margin-left: -20%;
+        margin-left: -15%;
+    }
+    #contact h1{
+        font-size: 2.3rem;
     }
 }
 @media (max-width:270px){
+    .sidebar{
+        margin-right: 0%;
+        width: 40%;
+    }
     section .timelineitems::before{
         left: 0%;
         height: 2000rem;
 
     }
     .header{
-        column-gap:5%;
+        column-gap:25%;
     }
     .navbar a i {
         display: flex;
@@ -2080,7 +2141,7 @@ audio::-webkit-media-controls-panel{
         flex-direction: column-reverse;
     }
     .homecontent{
-        margin-left: -20%;
+        margin-left: -15%;
     }
     .home p{
         width:100%;
@@ -2097,8 +2158,11 @@ audio::-webkit-media-controls-panel{
     #skills{
         margin-top: 200%;
     }
-    footer  {
-        font-size: 0.5rem;
+    footer p {
+        font-size: 0.7rem;
+    }
+    footer a {
+        font-size: 0.7rem;
     }
     section .timelineitems::before {
         left: 0; /* Align timeline to the left */
@@ -2111,7 +2175,7 @@ audio::-webkit-media-controls-panel{
         display: flex;
         column-gap: 20PX;
         margin-left: 0%;
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
     .informations input{
         width: 80px;
@@ -2124,21 +2188,40 @@ audio::-webkit-media-controls-panel{
         width: 100px;
     }
 }
+@media (max-width:233px){
+    .home h1{
+        font-size:1.2rem ;
+    }
+    #contact h1{
+        font-size: 1.5rem;
+    }
+    .informations input{
+        width: 70px;
+    }
+}
 @media (max-width:217px){
+    footer p {
+        font-size: 0.6rem;
+    }
+    footer a {
+        font-size: 0.6rem;
+    }
     section .timelineitems::before{
         left: 0%;
         height: 100rem;
 
     }
     .header{
-        column-gap:3%;
+        column-gap:20%;
     }
     .logo{
+        padding-top: 2%;
         font-size: 0.8rem;
     }
     .sidebar{
-        margin-right: 65%;
-        height: 39vh;
+        margin-right: 0%;
+        width: 50%;
+        height: 35vh;
     }
     .heading{
         font-size: 2rem;
@@ -2180,6 +2263,15 @@ audio::-webkit-media-controls-panel{
     }
 }
 @media (max-width:190PX) {
+    .informations input{
+        width: 30px;
+    }
+    footer p {
+        font-size: 0.4rem;
+    }
+    footer a {
+        font-size: 0.5rem;
+    }
     #skills{
         margin-top: 900%;
     }
@@ -2192,6 +2284,9 @@ audio::-webkit-media-controls-panel{
 @media (max-width:174PX) {
     #skills{
         margin-top: 1500%;
+    }
+    .header{
+        column-gap: 5%;
     }
 } 
 @media (max-width:167PX) {
