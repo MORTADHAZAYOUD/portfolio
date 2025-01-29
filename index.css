@@ -746,7 +746,9 @@ audio::-webkit-media-controls-panel{
 
 }
 @media (max-width:1700px){
-
+    .header{
+        column-gap: 40%;
+    }
     section .timelineitems::before{
         right: 50%;
         height: 50rem;
@@ -765,7 +767,9 @@ audio::-webkit-media-controls-panel{
     }
 }
 @media (max-width:1560px){
-
+    .header{
+        column-gap: 35%;
+    }
     .home p{
         width: 70%;
         font-size: 15px;
@@ -1033,7 +1037,7 @@ audio::-webkit-media-controls-panel{
         width:80%;
     }
     .home{
-        margin-left: -10%;
+        margin-left: -7%;
     }
     .informations input{
         width: 350px;
@@ -1417,7 +1421,7 @@ audio::-webkit-media-controls-panel{
         text-align: right;
     }
     .timeline-item:nth-child(even){
-        margin-left: 20%;
+        margin-left: 0%;
     }
     .timeline-dot:nth-child(odd){
         position: absolute;
