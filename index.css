@@ -775,12 +775,13 @@ audio::-webkit-media-controls-panel{
     }
     .home p{
         width: 70%;
-        font-size: 15px;
+        font-size: 16px;
     }
     .home h1{
         margin-bottom: -4%;
     }
     .home h2{
+        font-size: 2rem;
         margin-bottom: -1%;
     }
     .moro img{
@@ -791,6 +792,10 @@ audio::-webkit-media-controls-panel{
     .education{
         margin-top: 0%;
         margin-bottom: 40%;
+    }
+    .timeline-item:nth-child(odd){
+        margin-right: 55%;
+        text-align: right;
     }
 }
 @media (max-width:1440px){
